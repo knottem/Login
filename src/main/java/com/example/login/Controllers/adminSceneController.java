@@ -1,7 +1,6 @@
 package com.example.login.Controllers;
 
 import com.example.login.Main;
-import com.example.login.Users.Admins;
 import com.example.login.Users.SuperUsers;
 import com.example.login.dataBase;
 import javafx.collections.FXCollections;
@@ -23,7 +22,7 @@ import java.util.ResourceBundle;
 
 public class adminSceneController implements Initializable {
     
-    public TableView<Admins> adminTable;
+    public TableView<SuperUsers> adminTable;
     public Font x3;
     public Color x4;
     public MenuItem logout;
@@ -34,10 +33,11 @@ public class adminSceneController implements Initializable {
 
     dataBase dataBase = new dataBase();
 
-    final ObservableList<Admins> data = FXCollections.observableArrayList();
+    final ObservableList<SuperUsers> data = FXCollections.observableArrayList();
     
     private void initialize(){
         data.addAll(dataBase.admins);
+        data.addAll(dataBase.users);
         name.setCellValueFactory(new PropertyValueFactory<>("userName"));
         password.setCellValueFactory(new PropertyValueFactory<>("password"));
         adminTable.setItems(data);
