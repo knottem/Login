@@ -11,8 +11,8 @@ public class dataBase {
     public ArrayList<Admins> admins = new ArrayList<>();
 
     public dataBase(){
-        users.add(new Users("george", "123123",1));
-        admins.add(new Admins("admin", "aikaik", 0));
+        users.add(new Users("george", "123123"));
+        admins.add(new Admins("admin", "aikaik"));
 
     }
 }

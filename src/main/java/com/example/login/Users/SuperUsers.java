@@ -4,19 +4,13 @@ public abstract class SuperUsers {
 
     private final String userName;
     private final String password;
+    Integer[] settings = {0,0,0,0,0,0,0};
 
-    // 0 = admin, 1 = user
-    private final int userGroup;
-
-    public SuperUsers(String userName, String password, int userGroup) {
+    public SuperUsers(String userName, String password) {
         this.userName = userName;
         this.password = password;
-        this.userGroup = userGroup;
     }
 
-    public int getUserGroup() {
-        return userGroup;
-    }
 
     public String getUserName() {
         return userName;
@@ -24,5 +18,13 @@ public abstract class SuperUsers {
 
     public String getPassword() {
         return password;
+    }
+
+    public Integer[] getSettings(){
+        return settings;
+    }
+
+    public void setSettings(Integer[] settings) {
+        this.settings = settings;
     }
 }

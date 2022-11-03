@@ -1,7 +1,9 @@
 package com.example.login.Controllers;
 
 import com.example.login.Main;
+import com.example.login.Users.Admins;
 import com.example.login.Users.SuperUsers;
+import com.example.login.Users.Users;
 import com.example.login.dataBase;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -31,6 +33,7 @@ public class LoginSceneController {
         String user = userName.getText();
         String pass = password.getText();
 
+
         for (int i = 0; i < dataBase.admins.size(); i++) {
             if(Objects.equals(dataBase.admins.get(i).getUserName(), user)){
                 if(Objects.equals(dataBase.admins.get(i).getPassword(), pass)){
@@ -50,6 +53,9 @@ public class LoginSceneController {
                     loginText.setText("Wrong password for user: " + dataBase.users.get(i).getUserName());
                 }
             }
+            else {
+                loginText.setText("There's no user called: " + user);
+            }
         }
 
 
@@ -60,9 +66,10 @@ public class LoginSceneController {
 
 
     public void changeScene(SuperUsers superUsers) {
-        if(superUsers.getUserGroup() == 0) {
+
+        if(superUsers.getClass() == Admins.class) {
             changeSceneMethod("admin");
-        } else if (superUsers.getUserGroup() == 1) {
+        } else if (superUsers.getClass() == Users.class) {
             changeSceneMethod("user");
         }
     }
