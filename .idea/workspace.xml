@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="start fix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/LoginMethods.java" afterDir="false" />
+    <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="lista av admins i adminScene">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/adminSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/LoginSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/LoginSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/login/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/login/admin.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1667484531504</updated>
       <workItem from="1667484532782" duration="5875000" />
-      <workItem from="1667490521761" duration="320000" />
+      <workItem from="1667490521761" duration="374000" />
+      <workItem from="1667505776744" duration="2983000" />
     </task>
     <task id="LOCAL-00001" summary="made login.">
       <created>1667488775778</created>
@@ -114,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667490374832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="start fix">
+      <created>1667490888380</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667490888380</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +144,7 @@
     <MESSAGE value="made new scenes" />
     <MESSAGE value="flyttade lite" />
     <MESSAGE value="start fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="start fix" />
+    <MESSAGE value="lista av admins i adminScene" />
+    <option name="LAST_COMMIT_MESSAGE" value="lista av admins i adminScene" />
   </component>
 </project>
