@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class dataBase {
 
-    ArrayList<Users> users = new ArrayList<>();
-    ArrayList<Admins> admins = new ArrayList<>();
+    public ArrayList<Users> users = new ArrayList<>();
+    public ArrayList<Admins> admins = new ArrayList<>();
 
     public dataBase(){
         users.add(new Users("george", "123123",1));

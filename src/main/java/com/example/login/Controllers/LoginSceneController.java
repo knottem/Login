@@ -1,6 +1,8 @@
-package com.example.login;
+package com.example.login.Controllers;
 
+import com.example.login.Main;
 import com.example.login.Users.SuperUsers;
+import com.example.login.dataBase;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -35,7 +37,7 @@ public class LoginSceneController {
                     changeScene(dataBase.admins.get(i));
                 }
                 else{
-                    loginText.setText("Wrong password for user: " + dataBase.admins.get(i).userName);
+                    loginText.setText("Wrong password for user: " + dataBase.admins.get(i).getUserName());
                 }
             }
         }
@@ -45,7 +47,7 @@ public class LoginSceneController {
                     changeScene(dataBase.users.get(i));
                 }
                 else{
-                    loginText.setText("Wrong password for user: " + dataBase.users.get(i).userName);
+                    loginText.setText("Wrong password for user: " + dataBase.users.get(i).getUserName());
                 }
             }
         }
@@ -67,7 +69,7 @@ public class LoginSceneController {
 
     private void changeSceneMethod(String sceneName) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(sceneName + ".fxml"));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource(sceneName + ".fxml"));
             Stage stage = (Stage) buttonScene.getScene().getWindow();
             Scene scene = new Scene(loader.load());
             stage.setScene(scene);

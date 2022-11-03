@@ -2,11 +2,11 @@ package com.example.login.Users;
 
 public abstract class SuperUsers {
 
-    public String userName;
-    public String password;
+    private final String userName;
+    private final String password;
 
     // 0 = admin, 1 = user
-    public int userGroup;
+    private final int userGroup;
 
     public SuperUsers(String userName, String password, int userGroup) {
         this.userName = userName;

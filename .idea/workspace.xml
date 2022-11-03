@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/LoginSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" afterDir="false" />
+    <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="flyttade lite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Admins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Admins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/LoginSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/LoginSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/SuperUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/SuperUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/login/loginScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/login/loginScene.fxml" afterDir="false" />
     </list>
@@ -61,7 +56,7 @@
       <module name="Login" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.login.*" />
+          <option name="PATTERN" value="com.example.login.Controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,8 +78,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667484531504</updated>
-      <workItem from="1667484532782" duration="4217000" />
+      <workItem from="1667484532782" duration="4929000" />
     </task>
+    <task id="LOCAL-00001" summary="made login.">
+      <created>1667488775778</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667488775778</updated>
+    </task>
+    <task id="LOCAL-00002" summary="made login.">
+      <created>1667488894568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667488894568</updated>
+    </task>
+    <task id="LOCAL-00003" summary="made new scenes">
+      <created>1667488964838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667488964838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +117,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made login." />
+    <MESSAGE value="made new scenes" />
+    <MESSAGE value="flyttade lite" />
+    <option name="LAST_COMMIT_MESSAGE" value="flyttade lite" />
   </component>
 </project>
