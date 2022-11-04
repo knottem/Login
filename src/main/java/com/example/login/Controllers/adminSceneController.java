@@ -7,7 +7,6 @@ import com.example.login.Users.Users;
 import com.example.login.dataBase;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -28,8 +27,8 @@ public class adminSceneController {
     public Font x3,x1;
     public Color x2,x4;
     public MenuItem logout;
-    public TableColumn<Admins, String> name, password;
-    public TableColumn<Admins, Integer> tableId;
+    public TableColumn<SuperUsers, String> name, password;
+    public TableColumn<SuperUsers, Integer> tableId;
     public Button adminButton,customerButton;
 
     dataBase dataBase = new dataBase();
