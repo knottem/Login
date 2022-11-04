@@ -2,6 +2,9 @@ package com.example.login;
 
 public class Tools {
 
-    dataBase dataBase = new dataBase();
+    dataBase dataBase;
 
+    public Tools() {
+        dataBase = new dataBase();
+    }
 }
