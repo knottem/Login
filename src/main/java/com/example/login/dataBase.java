@@ -13,7 +13,8 @@ public class dataBase {
     public dataBase(){
         users.add(new Users("george", "123123"));
         admins.add(new Admins("admin", "aikaik"));
-        admins.add(new Admins("admin2","test"));
-
+        users.add(new Users("Daniel", "1233"));
+        users.add(new Users("Peter", "12313323"));
+        users.add(new Users("Erik", "1233"));
     }
 }

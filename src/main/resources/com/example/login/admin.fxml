@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -59,11 +60,14 @@
           <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
         </textFill>
       </Label>
+         <Button fx:id="adminButton" layoutX="74.0" layoutY="81.0" mnemonicParsing="false" onAction="#showAdminList" text="Show Admin list" />
+         <Button fx:id="customerButton" layoutX="74.0" layoutY="142.0" mnemonicParsing="false" onAction="#showCustomerList" text="Show Customer list" />
     </AnchorPane>
     <ScrollPane>
       <AnchorPane id="Content" prefHeight="545.0" prefWidth="430.0">
             <TableView fx:id="adminTable" layoutX="13.0" layoutY="17.0" prefHeight="511.0" prefWidth="406.0">
               <columns>
+                  <TableColumn fx:id="tableId" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="ID" />
                 <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
                 <TableColumn fx:id="password" prefWidth="75.0" text="Password" />
               </columns>

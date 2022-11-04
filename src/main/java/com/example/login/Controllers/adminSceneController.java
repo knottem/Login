@@ -1,13 +1,16 @@
 package com.example.login.Controllers;
 
 import com.example.login.Main;
+import com.example.login.Users.Admins;
 import com.example.login.Users.SuperUsers;
+import com.example.login.Users.Users;
 import com.example.login.dataBase;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -17,37 +20,21 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.ArrayList;
 
-public class adminSceneController implements Initializable {
+public class adminSceneController {
     
     public TableView<SuperUsers> adminTable;
-    public Font x3;
-    public Color x4;
+    public Font x3,x1;
+    public Color x2,x4;
     public MenuItem logout;
-    public TableColumn<SuperUsers, String> name;
-    public TableColumn<SuperUsers, String> password;
-    public Font x1;
-    public Color x2;
+    public TableColumn<Admins, String> name, password;
+    public TableColumn<Admins, Integer> tableId;
+    public Button adminButton,customerButton;
 
     dataBase dataBase = new dataBase();
 
     final ObservableList<SuperUsers> data = FXCollections.observableArrayList();
-    
-    private void initialize(){
-        data.addAll(dataBase.admins);
-        data.addAll(dataBase.users);
-        name.setCellValueFactory(new PropertyValueFactory<>("userName"));
-        password.setCellValueFactory(new PropertyValueFactory<>("password"));
-        adminTable.setItems(data);
-    }
-
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        initialize();
-    }
 
     public void logoutAction() {
         try {
@@ -59,4 +46,28 @@ public class adminSceneController implements Initializable {
                 io.printStackTrace();
             }
     }
+
+    public void showAdminList() {
+        showList(dataBase.users,dataBase.admins,true);
+    }
+
+    public void showCustomerList() {
+        showList(dataBase.users, dataBase.admins,false);
+    }
+
+    private void showList(ArrayList<Users> dataBaseUsers,ArrayList<Admins> dataBaseAdmins, boolean admins ){
+        adminTable.getItems().clear();
+        data.removeAll();
+        if(admins){
+            data.addAll(dataBaseAdmins);
+        }
+        else{
+            data.addAll(dataBaseUsers);
+        }
+        tableId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        name.setCellValueFactory(new PropertyValueFactory<>("userName"));
+        password.setCellValueFactory(new PropertyValueFactory<>("password"));
+        adminTable.setItems(data);
+    }
+
 }

@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="lista av admins i adminScene">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/adminSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/adminSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/adminSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Admins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Admins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/login/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/login/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/login/user.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/login/user.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -78,7 +83,8 @@
       <updated>1667484531504</updated>
       <workItem from="1667484532782" duration="5875000" />
       <workItem from="1667490521761" duration="374000" />
-      <workItem from="1667505776744" duration="2983000" />
+      <workItem from="1667505776744" duration="3212000" />
+      <workItem from="1667550755535" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="made login.">
       <created>1667488775778</created>
@@ -122,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667490888380</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lista av admins i adminScene">
+      <created>1667508763224</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667508763224</updated>
+    </task>
+    <task id="LOCAL-00008" summary="lista av admins i adminScene">
+      <created>1667508919073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667508919073</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
