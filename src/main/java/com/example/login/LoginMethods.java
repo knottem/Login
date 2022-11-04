@@ -1,5 +1,6 @@
 package com.example.login;
 
+import com.example.login.Tools.Tools;
 import com.example.login.Users.Admins;
 import com.example.login.Users.SuperUsers;
 import com.example.login.Users.Users;
@@ -12,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class LoginMethods extends Tools{
+public class LoginMethods extends Tools {
 
 
 
@@ -41,25 +42,25 @@ public class LoginMethods extends Tools{
 
     public void loginAttempt(String user, String pass, Label loginText, Button button){
 
-        for (int i = 0; i < com.example.login.dataBase.admins.size(); i++) {
-            if(Objects.equals(com.example.login.dataBase.admins.get(i).getUserName(), user)){
-                if(Objects.equals(com.example.login.dataBase.admins.get(i).getPassword(), pass)){
-                    changeScene(com.example.login.dataBase.admins.get(i), button);
+        for (int i = 0; i < com.example.login.Tools.dataBase.admins.size(); i++) {
+            if(Objects.equals(com.example.login.Tools.dataBase.admins.get(i).getUserName(), user)){
+                if(Objects.equals(com.example.login.Tools.dataBase.admins.get(i).getPassword(), pass)){
+                    changeScene(com.example.login.Tools.dataBase.admins.get(i), button);
                     break;
                 }
                 else{
-                    loginText.setText("Wrong password for user: " + com.example.login.dataBase.admins.get(i).getUserName());
+                    loginText.setText("Wrong password for user: " + com.example.login.Tools.dataBase.admins.get(i).getUserName());
                 }
             }
         }
-        for (int i = 0; i < com.example.login.dataBase.users.size(); i++) {
-            if(Objects.equals(com.example.login.dataBase.users.get(i).getUserName(), user)){
-                if(Objects.equals(com.example.login.dataBase.users.get(i).getPassword(), pass)){
-                    changeScene(com.example.login.dataBase.users.get(i), button);
+        for (int i = 0; i < com.example.login.Tools.dataBase.users.size(); i++) {
+            if(Objects.equals(com.example.login.Tools.dataBase.users.get(i).getUserName(), user)){
+                if(Objects.equals(com.example.login.Tools.dataBase.users.get(i).getPassword(), pass)){
+                    changeScene(com.example.login.Tools.dataBase.users.get(i), button);
                     break;
                 }
                 else{
-                    loginText.setText("Wrong password for user: " + com.example.login.dataBase.users.get(i).getUserName());
+                    loginText.setText("Wrong password for user: " + com.example.login.Tools.dataBase.users.get(i).getUserName());
                 }
             }
             else {

@@ -1,8 +1,8 @@
-package com.example.login;
+package com.example.login.Tools;
 
 public class Tools {
 
-    dataBase dataBase;
+    com.example.login.Tools.dataBase dataBase;
 
     public Tools() {
         dataBase = new dataBase();

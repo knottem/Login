@@ -1,7 +1,7 @@
 package com.example.login.Controllers;
 
-import com.example.login.Tools;
-import com.example.login.dataBase;
+import com.example.login.Tools.Tools;
+import com.example.login.Tools.dataBase;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
