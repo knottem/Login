@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="lista av admins i adminScene">
+    <list default="true" id="ad374ca4-ff3b-4824-926a-1923e24c7e11" name="Changes" comment="active user controlled when logged in">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/UserSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Tools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/adminSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Controllers/adminSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/LoginMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/LoginMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Admins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Admins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/SuperUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/SuperUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/Users/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/login/dataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/login/user.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/login/user.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,7 +89,9 @@
       <workItem from="1667484532782" duration="5875000" />
       <workItem from="1667490521761" duration="374000" />
       <workItem from="1667505776744" duration="3212000" />
-      <workItem from="1667550755535" duration="4459000" />
+      <workItem from="1667550755535" duration="4514000" />
+      <workItem from="1667573430214" duration="218000" />
+      <workItem from="1667578004116" duration="2047000" />
     </task>
     <task id="LOCAL-00001" summary="made login.">
       <created>1667488775778</created>
@@ -149,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667552805568</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="lista av admins i adminScene">
+      <created>1667555269637</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667555269637</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +186,18 @@
     <MESSAGE value="flyttade lite" />
     <MESSAGE value="start fix" />
     <MESSAGE value="lista av admins i adminScene" />
-    <option name="LAST_COMMIT_MESSAGE" value="lista av admins i adminScene" />
+    <MESSAGE value="active user controlled when logged in" />
+    <option name="LAST_COMMIT_MESSAGE" value="active user controlled when logged in" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/login/LoginMethods.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

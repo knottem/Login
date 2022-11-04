@@ -7,16 +7,16 @@ import java.util.ArrayList;
 
 public class dataBase {
 
-    public ArrayList<Users> users = new ArrayList<>();
-    public ArrayList<Admins> admins = new ArrayList<>();
+    public static ArrayList<Users> users = new ArrayList<>();
+    public static ArrayList<Admins> admins = new ArrayList<>();
 
     public dataBase(){
 
-        admins.add(new Admins("admin", "a"));
+        admins.add(new Admins("admin", "a",false));
 
-        users.add(new Users("george", "123123"));
-        users.add(new Users("Daniel", "1233"));
-        users.add(new Users("Peter", "12313323"));
-        users.add(new Users("Erik", "1233"));
+        users.add(new Users("george", "a",false));
+        users.add(new Users("Daniel", "1233",false));
+        users.add(new Users("Peter", "12313323",false));
+        users.add(new Users("Erik", "1233",false));
     }
 }

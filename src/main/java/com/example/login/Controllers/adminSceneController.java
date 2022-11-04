@@ -31,8 +31,6 @@ public class adminSceneController {
     public TableColumn<SuperUsers, Integer> tableId;
     public Button adminButton,customerButton;
 
-    dataBase dataBase = new dataBase();
-
     final ObservableList<SuperUsers> data = FXCollections.observableArrayList();
 
     public void logoutAction() {
@@ -63,7 +61,6 @@ public class adminSceneController {
         else{
             data.addAll(dataBaseUsers);
         }
-        tableId.setCellValueFactory(new PropertyValueFactory<>("id"));
         name.setCellValueFactory(new PropertyValueFactory<>("userName"));
         password.setCellValueFactory(new PropertyValueFactory<>("password"));
         adminTable.setItems(data);

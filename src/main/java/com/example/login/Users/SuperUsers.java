@@ -4,17 +4,32 @@ public abstract class SuperUsers {
 
     private final String userName;
     private final String password;
+    private boolean active;
     Integer[] settings = {0,0,0,0,0,0,0};
 
-    public SuperUsers(String userName, String password) {
+    public SuperUsers(String userName, String password, boolean active) {
         this.userName = userName;
         this.password = password;
+        this.active = active;
     }
 
 
     public String getUserName() {
         return userName;
     }
+
+    public void setActive() {
+        active = true;
+    }
+
+    public void disableActive(){
+        active = false;
+    }
+
+    public boolean getActive(){
+        return active;
+    }
+
 
     public String getPassword() {
         return password;
